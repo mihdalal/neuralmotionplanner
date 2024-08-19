@@ -77,20 +77,19 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Data-Driven Neural Motion Planning</h1>
+          <h1 class="title is-1 publication-title">Neural MP: A Policy Learning Framework for Generalist Neural Motion Planners</h1>
           <div class="is-size-5 publication-authors">
-            <a target="_blank" href="https://mihdalal.github.io/">Murtaza Dalal</a>&nbsp;&nbsp;&nbsp;
-                <a target="_blank" href="https://www.linkedin.com/in/jiahui-jim-yang-0666542a0/">Jiahui Yang</a>&nbsp;&nbsp;&nbsp;
+            <a target="_blank" href="https://mihdalal.github.io/">Murtaza Dalal*</a>&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://www.linkedin.com/in/jiahui-jim-yang-0666542a0/">Jiahui Yang*</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://russellmendonca.github.io/">Russell Mendonca</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.linkedin.com/in/youssefkhaky/">Youssef Khaky</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>&nbsp;&nbsp;&nbsp;
+                <br><br>
+              <img src="./resources/cmu-wordmark-horizontal-r.png" width="40%"></img>
             </span>
           </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">Carnegie Mellon University</span>
-          </div>
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -151,7 +150,7 @@
       <div class="container">
         <div class="columns is-vcentered  is-centered">
             <div class="item item-steve"></div>
-            <iframe width="1920" height="740" src="https://www.youtube.com/embed/HoVoNd0a4G4?autoplay=1&mute=1&loop=1&vq=hd1080" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <iframe width="1920" height="740" src="https://www.youtube.com/embed/HoVoNd0a4G4?autoplay=1&mute=1&loop controls=1&vq=hd1080" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
           </div>
           </br>
         </div>
@@ -169,49 +168,55 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-steve">
-          <video poster="" id="steve" autoplay muted loop height="100%">
+          <video poster="" id="steve" autoplay muted loop controls height="100%">
             <source src="resources/rotating vids/bookcase compressed.mp4"
                     type="video/mp4">
           </video>
         </div>
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay muted loop controls height="100%">
+            <source src="resources/rotating vids/dynamic.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
         <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay muted loop height="100%">
+          <video poster="" id="shiba" autoplay muted loop controls height="100%">
             <source src="resources/rotating vids/scene 2.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay muted loop height="100%">
+          <video poster="" id="fullbody" autoplay muted loop controls height="100%">
             <source src="resources/rotating vids/big_shelf compressed.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay muted loop height="100%">
+          <video poster="" id="shiba" autoplay muted loop controls height="100%">
             <source src="resources/rotating vids/shelf_microwave compressed.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay muted loop height="100%">
+          <video poster="" id="shiba" autoplay muted loop controls height="100%">
             <source src="resources/rotating vids/scene 3.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay muted loop height="100%">
+          <video poster="" id="blueshirt" autoplay muted loop controls height="100%">
             <source src="resources/rotating vids/bins compressed.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay muted loop height="100%">
+          <video poster="" id="shiba" autoplay muted loop controls height="100%">
             <source src="resources/rotating vids/cabinet compressed.mp4"
                     type="video/mp4">
           </video>
         </div>
         <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay muted loop height="100%">
+          <video poster="" id="shiba" autoplay muted loop controls height="100%">
             <source src="resources/rotating vids/scene 1.mp4"
                     type="video/mp4">
           </video>
@@ -229,7 +234,12 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
               <p>
-              The current paradigm for motion planning generates solutions from scratch for every new problem, which consumes time and compute resources. Inspired by the ability of humans to practice from diverse experiences and gradually increase proficiency from slow, unsure behavior to fast, dynamic motions while acquiring new skills, we seek to use data-driven learning. Collecting a diverse set of real world scenes with various objects, obstacles, and scene configurations to enable generalization is prohibitively expensive, especially for motion planning problems. Our approach builds a large number of complex scenes in simulation, where expert data is collected and then <em>distilled</em> into a reactive generalist policy. We build complex scenes by combining procedural, programmatic generation with models of everyday objects sampled from large 3D datasets. We then combine this with simple forward samplers and lightweight optimization to obtain a safe path for real world deployment. We perform a thorough evaluation of our method on <b>64</b> motion planning tasks across <b>four</b> diverse environments with randomized poses, scenes and obstacles, in the real world, demonstrating an improvement of over <b>20%</b> over sampling-based and <b>80%</b> over state-of-the-art neural motion planning methods. All code, models and datasets will be released on acceptance.
+                The current paradigm for motion planning generates solutions from scratch for every new problem, which consumes significant amounts of time and computational resources. 
+Inspired by the ability of humans to leverage their prior experience to quickly solve new tasks, we seek to apply large-scale data-driven learning to the problem of motion planning.
+Our approach builds a large number of complex scenes in simulation, collects expert data from a motion planner, then <i>distills</i> it into a reactive generalist policy. 
+We then combine this with simple forward samplers and lightweight optimization to obtain a safe path for real world deployment. 
+We perform a thorough evaluation of our method on <b>64</b> motion planning tasks across four diverse environments with randomized poses, scenes and obstacles, in the real world, demonstrating an improvement of <b>23%</b>, <b>17%</b> and <b>79%</b> motion planning success rate over state of the art sampling, optimization and learning based planning methods.
+              <!-- The current paradigm for motion planning generates solutions from scratch for every new problem, which consumes time and compute resources. Inspired by the ability of humans to practice from diverse experiences and gradually increase proficiency from slow, unsure behavior to fast, dynamic motions while acquiring new skills, we seek to use data-driven learning. Collecting a diverse set of real world scenes with various objects, obstacles, and scene configurations to enable generalization is prohibitively expensive, especially for motion planning problems. Our approach builds a large number of complex scenes in simulation, where expert data is collected and then <em>distilled</em> into a reactive generalist policy. We build complex scenes by combining procedural, programmatic generation with models of everyday objects sampled from large 3D datasets. We then combine this with simple forward samplers and lightweight optimization to obtain a safe path for real world deployment. We perform a thorough evaluation of our method on <b>64</b> motion planning tasks across <b>four</b> diverse environments with randomized poses, scenes and obstacles, in the real world, demonstrating an improvement of over <b>20%</b> over sampling-based and <b>80%</b> over state-of-the-art neural motion planning methods. All code, models and datasets will be released on acceptance. -->
               </p>
           </div>
         </div>
@@ -256,7 +266,7 @@
               <div class="columns is-centered has-text-centered">
                 <div class="column is-two-thirds">
                 <div class="content has-text-justified interpolation-panel">
-                    <p style="text-align: center;font-size: 18px">We present Neural Motion Planner, which consists of 3 main components. <b>Left</b>: Large Scale data generation in simulation using expert planners <b>Middle</b>: Training deep network models to perform fast reactive motion planning <b>Right</b>: Test-time optimization at inference time to improve performance. </p>
+                    <p style="text-align: center;font-size: 18px">We present Neural Motion Planner, which consists of 3 main components. <b>Left</b>: Large Scale data generation in simulation using expert planners <b>Middle</b>: Training deep network models to perform fast reactive motion planning <b>Right</b>: Test-time optimization to ensure safe and reliable deployment </p>
                 </div>
               </div>
             </div>
@@ -274,21 +284,21 @@
                 <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Neural MP solves motion planning tasks with complex unseen object configurations.</strong></h3>
                 <div class="columns">
                     <div class="column">
-                        <video class="center" playsinline autoplay loop muted src="./resources/eval/Eval Bins compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                        <video class="center" playsinline autoplay loop controls muted src="./resources/eval/Eval Bins compressed.mp4" width="100%" style="border-radius:10px;"></video>
                         <p style="text-align: center; font-size: 18px">Bins: 100%</p>
                     </div>
                     <div class="column">
-                        <video class="center" playsinline autoplay loop muted src="./resources/eval/Eval Shelf compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                        <video class="center" playsinline autoplay loop controls muted src="./resources/eval/Eval Shelf compressed.mp4" width="100%" style="border-radius:10px;"></video>
                         <p style="text-align: center; font-size: 18px">Shelf: 100%</p>
                     </div>
                 </div>
                 <div class="columns">
                   <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/eval/Eval Cabinet compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/eval/Eval Cabinet compressed.mp4" width="100%" style="border-radius:10px;"></video>
                     <p style="text-align: center; font-size: 18px">Articulated: 87.5%</p>
                 </div>
                 <div class="column">
-                  <video class="center" playsinline autoplay loop muted src="./resources/eval/Eval In Hand compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/eval/Eval In Hand compressed.mp4" width="100%" style="border-radius:10px;"></video>
                   <p style="text-align: center; font-size: 18px">In Hand: 81.25%</p>
               </div>
               </div>
@@ -304,31 +314,31 @@
                 <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Neural MP generalizes to out of distribution obstacles and in-hand objects</strong></h3>
                 <div class="columns">
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/sword compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/sword compressed.mp4" width="100%" style="border-radius:10px;"></video>
                       <p style="text-align: center; font-size: 18px">Minecraft Sword</p>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bookcase 1.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bookcase 1.mp4" width="100%" style="border-radius:10px;"></video>
                       <p style="text-align: center; font-size: 18px">Shelf to Bookcase</p>
                   </div>
                 </div>
                 <div class="columns">
                   <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bookcase 2.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bookcase 2.mp4" width="100%" style="border-radius:10px;"></video>
                     <p style="text-align: center; font-size: 18px">Bookcase from Side</p>
                 </div>
                     <div class="column">
-                        <video class="center" playsinline autoplay loop muted src="./resources/gpu compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                        <video class="center" playsinline autoplay loop controls muted src="./resources/gpu compressed.mp4" width="100%" style="border-radius:10px;"></video>
                         <p style="text-align: center; font-size: 18px">GPU into Cabinet Drawer</p>
                   </div>
                 </div>
                 <div class="columns">
                   <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/big shelf 2.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/big shelf 2.mp4" width="100%" style="border-radius:10px;"></video>
                     <p style="text-align: center; font-size: 18px">Long Pasta in Microwave</p>
                 </div>
                     <div class="column">
-                        <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bookcase 3.mp4" width="100%" style="border-radius:10px;"></video>
+                        <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bookcase 3.mp4" width="100%" style="border-radius:10px;"></video>
                         <p style="text-align: center; font-size: 18px">Bookcase from Behind</p>
                   </div>
                 </div>
@@ -345,31 +355,31 @@
               <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Neural MP extends directly to unstructured, in-the-wild scenes</strong></h3>
               <div class="columns">
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/in the wild compressed/bottle.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/in the wild compressed/bottle.mp4" width="100%" style="border-radius:10px;"></video>
                     <p style="text-align: center; font-size: 18px">Tidying Cabinet</p>
                 </div>
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/in the wild compressed/coffee.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/in the wild compressed/coffee.mp4" width="100%" style="border-radius:10px;"></video>
                     <p style="text-align: center; font-size: 18px">Making Coffee</p>
                 </div>
               </div>
               <div class="columns">
                 <div class="column">
-                  <video class="center" playsinline autoplay loop muted src="./resources/in the wild compressed/dish rack.mp4" width="100%" style="border-radius:10px;"></video>
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/in the wild compressed/dish rack.mp4" width="100%" style="border-radius:10px;"></video>
                   <p style="text-align: center; font-size: 18px">Drying Plates</p>
               </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/in the wild compressed/ketchup.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/in the wild compressed/ketchup.mp4" width="100%" style="border-radius:10px;"></video>
                       <p style="text-align: center; font-size: 18px">Rearranging Ketchup</p>
                 </div>
               </div>
               <div class="columns">
                 <div class="column">
-                  <video class="center" playsinline autoplay loop muted src="./resources/in the wild compressed/soap.mp4" width="100%" style="border-radius:10px;"></video>
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/in the wild compressed/soap.mp4" width="100%" style="border-radius:10px;"></video>
                   <p style="text-align: center; font-size: 18px">Cleaning Dishes</p>
               </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/in the wild compressed/meat.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/in the wild compressed/meat.mp4" width="100%" style="border-radius:10px;"></video>
                       <p style="text-align: center; font-size: 18px">Defrosting Meat</p>
                 </div>
               </div>
@@ -383,34 +393,54 @@
   <div class="container">
       <div class="columns is-centered">
         <div class="column is-full-width">
+              <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Neural MP can motion plan in a dynamic, reactive manner</strong></h3>
+              <div class="columns">
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/dynamic_compressed/sword 2x.mp4" width="100%" style="border-radius:10px;"></video>
+                      <p style="text-align: center; font-size: 18px">Sword Dodging</p>
+                  </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/dynamic_compressed/pod 2x.mp4" width="100%" style="border-radius:10px;"></video>
+                      <p style="text-align: center; font-size: 18px">Multi-stage Obstacle Avoidance</p>
+                    </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
               <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Neural MP is trained using 6 classes of procedurally generated objects with significant size, shape and pose variation. </strong></h3>
               <div class="columns">
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/sim vids compressed/cubby.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/sim vids compressed/cubby.mp4" width="100%" style="border-radius:10px;"></video>
                     <p style="text-align: center; font-size: 18px">Cubby</p>
                 </div>
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/sim vids compressed/dishwasher.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/sim vids compressed/dishwasher.mp4" width="100%" style="border-radius:10px;"></video>
                     <p style="text-align: center; font-size: 18px">Dishwasher</p>
                 </div>
               </div>
               <div class="columns">
                 <div class="column">
-                  <video class="center" playsinline autoplay loop muted src="./resources/sim vids compressed/microwave.mp4" width="100%" style="border-radius:10px;"></video>
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/sim vids compressed/microwave.mp4" width="100%" style="border-radius:10px;"></video>
                   <p style="text-align: center; font-size: 18px">Microwaves</p>
               </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/sim vids compressed/openbox.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/sim vids compressed/openbox.mp4" width="100%" style="border-radius:10px;"></video>
                       <p style="text-align: center; font-size: 18px">Boxes</p>
                 </div>
               </div>
               <div class="columns">
                 <div class="column">
-                  <video class="center" playsinline autoplay loop muted src="./resources/sim vids compressed/shelves.mp4" width="100%" style="border-radius:10px;"></video>
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/sim vids compressed/shelves.mp4" width="100%" style="border-radius:10px;"></video>
                   <p style="text-align: center; font-size: 18px">Shelves</p>
               </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/sim vids compressed/wallcabinet.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/sim vids compressed/wallcabinet.mp4" width="100%" style="border-radius:10px;"></video>
                       <p style="text-align: center; font-size: 18px">Cabinets</p>
                 </div>
               </div>
@@ -430,13 +460,13 @@
                     <h2 class="subtitle">
                       Full procedural environment generation pipeline which randomly samples programmatic obstacles and objects to create diverse scenes.
                     </h2>
-                      <video class="center" playsinline autoplay loop muted src="./resources/sim vids compressed/random montage .5x.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/sim vids compressed/random montage .5x.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
                     <h2 class="subtitle">
                       Expert data generation involves sampling challenging motion planning configurations such as those inside obstacles.
                     </h2>
-                      <video class="center" playsinline autoplay loop muted src="./resources/sim vids compressed/full_trajectories.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/sim vids compressed/full_trajectories.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
               </div>
           </div>
@@ -451,25 +481,25 @@
               <h3 class="title is-3" style="text-align: center; padding-bottom: 10px;"><strong>Test-time Optimization Analysis</strong></h3>
               <div class="columns">
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/tto_analysis/tto_worst_idx76_cropped.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/tto_analysis/tto_worst_idx76_cropped.mp4" width="100%" style="border-radius:10px;"></video>
                       <h2 class="subtitle">
                         Low quality path, significant collisions. Objective Value (num scene points in collision): <b>1276</b>
                       </h2>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/tto_analysis/tto_medium_idx95_cropped.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/tto_analysis/tto_medium_idx95_cropped.mp4" width="100%" style="border-radius:10px;"></video>
                       <h2 class="subtitle">
                         Medium-low quality path, some collisions. Objective Value (num scene points in collision): <b>233</b>
                       </h2>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/tto_analysis/tto_medium_idx0_cropped.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/tto_analysis/tto_medium_idx0_cropped.mp4" width="100%" style="border-radius:10px;"></video>
                       <h2 class="subtitle">
                         Medium quality path, few minor collisions. Objective Value (num scene points in collision): <b>159</b>
                       </h2>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/tto_analysis/tto_best_cropped.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/tto_analysis/tto_best_cropped.mp4" width="100%" style="border-radius:10px;"></video>
                       <h2 class="subtitle">
                         High quality path, zero collisions. Objective Value (num scene points in collision): <b>0</b> 
                       </h2>
@@ -495,7 +525,7 @@
                         Sometimes the pointcloud of the object is can have noise and holes, especially along edges. As a result, in this the top rung of the shelf
                         is not incorporated in the pointcloud, resulting in the policy colliding with the top rung. &#10;&#13;
                       </h2>
-                        <video class="center" playsinline autoplay loop muted src="./resources/failure cases/bad pcd compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                        <video class="center" playsinline autoplay loop controls muted src="./resources/failure cases/bad pcd compressed.mp4" width="100%" style="border-radius:10px;"></video>
                     </div>
                     <div class="column">
                       <h2 class="subtitle">
@@ -503,7 +533,7 @@
                         is not an issue. However, once we start the end-effector fully in the microwave, the policy fails to remove the hand without colliding 
                         with the microwave and dragging it along.
                       </h2>
-                        <video class="center" playsinline autoplay loop muted src="./resources/failure cases/tight spaces compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                        <video class="center" playsinline autoplay loop controls muted src="./resources/failure cases/tight spaces compressed.mp4" width="100%" style="border-radius:10px;"></video>
                     </div>
                 </div>
             </div>
@@ -520,128 +550,128 @@
               </h3>
               <div class="columns">
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/shelf microwave black 1.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/shelf microwave black 1.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/big shelf 1.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/big shelf 1.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/big shelf 2.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/big shelf 2.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/big shelf 3.mp4" width="100%" style="border-radius:10px;"></video>
-                  </div>
-              </div>
-              <div class="columns">
-                  <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bins action figure.mp4" width="100%" style="border-radius:10px;"></video>
-                  </div>
-                  <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bins black 2.mp4" width="100%" style="border-radius:10px;"></video>
-                  </div>
-                  <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bins black 3.mp4" width="100%" style="border-radius:10px;"></video>
-                  </div>
-                  <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bins book.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/big shelf 3.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
               </div>
               <div class="columns">
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bins sword.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bins action figure.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bookcase 1.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bins black 2.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bookcase 2.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bins black 3.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bookcase 3.mp4" width="100%" style="border-radius:10px;"></video>
-                  </div>
-              </div>
-              <div class="columns">
-                  <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bookcase black 1.mp4" width="100%" style="border-radius:10px;"></video>
-                  </div>
-                  <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bookcase black 2.mp4" width="100%" style="border-radius:10px;"></video>
-                  </div>
-                  <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/bookcase black 3.mp4" width="100%" style="border-radius:10px;"></video>
-                  </div>
-                  <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/cabinet 1.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bins book.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
               </div>
               <div class="columns">
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/cabinet 2.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bins sword.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/cabinet 3.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bookcase 1.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/cabinet black 1.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bookcase 2.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/cabinet black 2.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bookcase 3.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
               </div>
               <div class="columns">
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/shelf microwave 1.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bookcase black 1.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/shelf microwave 2.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bookcase black 2.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/shelf microwave 3.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/bookcase black 3.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
                   <div class="column">
-                      <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/shelf microwave black 2.mp4" width="100%" style="border-radius:10px;"></video>
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/cabinet 1.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+              </div>
+              <div class="columns">
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/cabinet 2.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/cabinet 3.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/cabinet black 1.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/cabinet black 2.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+              </div>
+              <div class="columns">
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/shelf microwave 1.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/shelf microwave 2.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/shelf microwave 3.mp4" width="100%" style="border-radius:10px;"></video>
+                  </div>
+                  <div class="column">
+                      <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/shelf microwave black 2.mp4" width="100%" style="border-radius:10px;"></video>
                   </div>
               </div>
               <div class="columns">
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/Eval Bins compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/Eval Bins compressed.mp4" width="100%" style="border-radius:10px;"></video>
                 </div>
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/Eval Cabinet compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/Eval Cabinet compressed.mp4" width="100%" style="border-radius:10px;"></video>
                 </div>
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/Eval In Hand compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/Eval In Hand compressed.mp4" width="100%" style="border-radius:10px;"></video>
                 </div>
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/Eval Shelf compressed.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/Eval Shelf compressed.mp4" width="100%" style="border-radius:10px;"></video>
                 </div>
             </div>
             <div class="columns">
               <div class="column">
-                  <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/meat.mp4" width="100%" style="border-radius:10px;"></video>
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/meat.mp4" width="100%" style="border-radius:10px;"></video>
               </div>
               <div class="column">
-                  <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/dish rack.mp4" width="100%" style="border-radius:10px;"></video>
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/dish rack.mp4" width="100%" style="border-radius:10px;"></video>
               </div>
               <div class="column">
-                  <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/coffee.mp4" width="100%" style="border-radius:10px;"></video>
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/coffee.mp4" width="100%" style="border-radius:10px;"></video>
               </div>
               <div class="column">
-                  <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/soap.mp4" width="100%" style="border-radius:10px;"></video>
+                  <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/soap.mp4" width="100%" style="border-radius:10px;"></video>
               </div>
           </div>
               <div class="columns">
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/big shelf black 1.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/big shelf black 1.mp4" width="100%" style="border-radius:10px;"></video>
                 </div>
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/big shelf black 2.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/big shelf black 2.mp4" width="100%" style="border-radius:10px;"></video>
                 </div>
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/big shelf black 3.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/big shelf black 3.mp4" width="100%" style="border-radius:10px;"></video>
                 </div>
                 <div class="column">
-                    <video class="center" playsinline autoplay loop muted src="./resources/gallery_compressed/big shelf black 4.mp4" width="100%" style="border-radius:10px;"></video>
+                    <video class="center" playsinline autoplay loop controls muted src="./resources/gallery_compressed/big shelf black 4.mp4" width="100%" style="border-radius:10px;"></video>
                 </div>
             </div>
           </div>
