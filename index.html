@@ -74,19 +74,19 @@
 
 <section class="hero">
   <div class="hero-body">
-    <div class="container is-max-desktop">
+    <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Neural MP: A Policy Learning Framework for Generalist Neural Motion Planners</h1>
+          <h1 class="title is-1 publication-title">Neural MP: A Generalist Neural Motion Planner</h1>
           <div class="is-size-5 publication-authors">
             <a target="_blank" href="https://mihdalal.github.io/">Murtaza Dalal*</a>&nbsp;&nbsp;&nbsp;
-                <a target="_blank" href="https://www.linkedin.com/in/jiahui-jim-yang-0666542a0/">Jiahui Yang*</a>&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://jim-young6709.github.io/">Jiahui Yang*</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://russellmendonca.github.io/">Russell Mendonca</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.linkedin.com/in/youssefkhaky/">Youssef Khaky</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>&nbsp;&nbsp;&nbsp;
                 <a target="_blank" href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a>&nbsp;&nbsp;&nbsp;
                 <br><br>
-              <img src="./resources/cmu-wordmark-horizontal-r.png" width="40%"></img>
+              <img src="./resources/cmu-wordmark-horizontal-r.png" width="30%"></img>
             </span>
           </div>
 
@@ -107,8 +107,9 @@
             <span class="link-block">
               <a target="_blank" href=""
                  class="external-link button is-normal is-rounded is-dark">
+                
                 <span class="icon">
-                    <i class="fas fa-file"></i>
+                    <i class="ai ai-arxiv"></i>
                 </span>
                 <span>ArXiv</span>
               </a>
@@ -124,6 +125,17 @@
                 <span>Code</span>
                 </a>
             </span>
+
+            <!-- Model Link. -->
+            <span class="link-block">
+              <a href="https://huggingface.co/mihdalal/NeuralMP"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <img src="static/images/hf_icon.svg" />
+                </span>
+                <span>Models</span>
+              </a>
+            </span>
             
             <!-- twitter Link. -->
             <span class="link-block">
@@ -133,6 +145,17 @@
                     <i class="fab fa-twitter"></i>
                 </span>
                 <span>Summary</span>
+              </a>
+            </span>
+
+            <!-- twitter Link. -->
+            <span class="link-block">
+              <a target="_blank" href="#BibTeX"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file"></i>
+                </span>
+                <span>BibTeX</span>
               </a>
             </span>
 
@@ -150,7 +173,7 @@
       <div class="container">
         <div class="columns is-vcentered  is-centered">
             <div class="item item-steve"></div>
-            <iframe width="1920" height="740" src="https://www.youtube.com/embed/HoVoNd0a4G4?autoplay=1&mute=1&loop controls=1&vq=hd1080" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+            <iframe width="1920" height="740" src="https://www.youtube.com/embed/0SHJbNTg3yU?autoplay=1&mute=1&loop controls=1&vq=hd1080" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
           </div>
           </br>
         </div>
@@ -227,7 +250,7 @@
 </section>
 
 <section class="section">
-    <div class="container is-max-desktop">
+    <div class="container">
       <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
@@ -239,7 +262,6 @@ Inspired by the ability of humans to leverage their prior experience to quickly 
 Our approach builds a large number of complex scenes in simulation, collects expert data from a motion planner, then <i>distills</i> it into a reactive generalist policy. 
 We then combine this with simple forward samplers and lightweight optimization to obtain a safe path for real world deployment. 
 We perform a thorough evaluation of our method on <b>64</b> motion planning tasks across four diverse environments with randomized poses, scenes and obstacles, in the real world, demonstrating an improvement of <b>23%</b>, <b>17%</b> and <b>79%</b> motion planning success rate over state of the art sampling, optimization and learning based planning methods.
-              <!-- The current paradigm for motion planning generates solutions from scratch for every new problem, which consumes time and compute resources. Inspired by the ability of humans to practice from diverse experiences and gradually increase proficiency from slow, unsure behavior to fast, dynamic motions while acquiring new skills, we seek to use data-driven learning. Collecting a diverse set of real world scenes with various objects, obstacles, and scene configurations to enable generalization is prohibitively expensive, especially for motion planning problems. Our approach builds a large number of complex scenes in simulation, where expert data is collected and then <em>distilled</em> into a reactive generalist policy. We build complex scenes by combining procedural, programmatic generation with models of everyday objects sampled from large 3D datasets. We then combine this with simple forward samplers and lightweight optimization to obtain a safe path for real world deployment. We perform a thorough evaluation of our method on <b>64</b> motion planning tasks across <b>four</b> diverse environments with randomized poses, scenes and obstacles, in the real world, demonstrating an improvement of over <b>20%</b> over sampling-based and <b>80%</b> over state-of-the-art neural motion planning methods. All code, models and datasets will be released on acceptance. -->
               </p>
           </div>
         </div>
@@ -275,6 +297,16 @@ We perform a thorough evaluation of our method on <b>64</b> motion planning task
             </div>
           </div>
          
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-4" style="text-align: center;">All videos play at 2x speed</h2>
+        </div> 
+      </div>
+    </div>
   </section>
 
   <section class="section">
@@ -679,6 +711,35 @@ We perform a thorough evaluation of our method on <b>64</b> motion planning task
       </div>
   </div>
 </section>
+
+<a id="BibTeX"></a>
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{dalal2024neuralmp,
+title={OpenVLA: An Open-Source Vision-Language-Action Model},
+author={Murtaza Dalal and Jiahui Yang and Russell Mendonca and Youssef Khaky and Ruslan Salakhutdinov and Deepak Pathak},
+journal = {},
+year={2024},
+} </code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p> Website borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a> under a <a
+              href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
+              International</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 
