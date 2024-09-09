@@ -1,0 +1,19 @@
+[submodule "pybullet-object-models"]
+	path = pybullet-object-models
+	url = https://github.com/eleramp/pybullet-object-models.git
+[submodule "robomimic"]
+	path = robomimic
+	url = git@github.com:mihdalal/robomimic.git
+	branch = neural_mp_release
+[submodule "pointnet2_ops"]
+	path = pointnet2_ops
+	url = git@github.com:fishbotics/pointnet2_ops.git
+	branch = v3.2.0
+[submodule "robofin"]
+	path = robofin
+	url = git@github.com:mihdalal/robofin.git
+	branch = v0.0.1
+[submodule "manimo"]
+	path = manimo
+	url = git@github.com:mihdalal/manimo.git
+	branch = neural_mp

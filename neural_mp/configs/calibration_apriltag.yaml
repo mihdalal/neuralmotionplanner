@@ -1,0 +1,9 @@
+calibrate_extrinsics:
+  tag:
+    type: tagStandard52h13
+    length: 0.050  # [meters]
+    active_pixel_ratio: 0.6  # For details, see https://github.com/AprilRobotics/apriltag/wiki/AprilTag-User-Guide
+  robot:
+    home_joint_angles: [0.02550676, -0.25173378, -0.3518326, -2.5239587, -0.11268669, 2.2990525, 0.5429185]
+  tag_detection:
+    display_images: False
