@@ -84,7 +84,7 @@ sudo apt-get update && sudo apt-get install -y \
 To clone the repository with all its submodules, use the following command:
 
 ```bash
-git clone --recurse-submodules https://github.com/mihdalal/neural_mp.git
+git clone --recurse-submodules https://github.com/mihdalal/neuralmotionplanner.git
 cd neural_mp
 ```
 
