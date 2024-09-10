@@ -133,7 +133,7 @@ pip install -e ./
 pip install -r requirements.txt
 ```
 
-In practice we found that `pointnet2_ops` extension is not easy to build and often raise import errors. Hence, we offer our pre-compiled [`_ext.cpython-38-x86_64-linux-gnu.so`](https://github.com/mihdalal/pointnet2_ops/blob/v3.2.0/pointnet2_ops/_ext.cpython-38-x86_64-linux-gnu.so) file using python3.8, torch2.1.0 and CUDA12.1, so you can install the package without compiling new extensions. Please note, in order to use the pre-compiled extension, you need to comment out [this part of code](https://github.com/mihdalal/pointnet2_ops/blob/e9acd21c2da3bb803128ff1da1028bd2f377eb0e/setup.py#L23-L34) in setup.py, otherwise it will rebuild and overwrite the file.
+In practice we found that `pointnet2_ops` extension is not easy to build and often raises import errors. Hence, we offer our pre-compiled [`_ext.cpython-38-x86_64-linux-gnu.so`](https://github.com/mihdalal/pointnet2_ops/blob/v3.2.0/pointnet2_ops/_ext.cpython-38-x86_64-linux-gnu.so) file. Using python3.8, torch2.1.0 and CUDA12.1, you can install the package without compiling new extensions. Please note, in order to use the pre-compiled extension, you need to comment out [this part of code](https://github.com/mihdalal/pointnet2_ops/blob/e9acd21c2da3bb803128ff1da1028bd2f377eb0e/setup.py#L23-L34) in setup.py, otherwise it will rebuild and overwrite the file.
 
 #### 4.4 For contributers
 ```bash
