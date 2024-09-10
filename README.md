@@ -85,7 +85,7 @@ To clone the repository with all its submodules, use the following command:
 
 ```bash
 git clone --recurse-submodules https://github.com/mihdalal/neuralmotionplanner.git
-cd neural_mp
+cd neuralmotionplanner
 ```
 
 If you've already cloned the repository without the `--recurse-submodules` flag, you can initialize and update the submodules like so:
@@ -97,17 +97,34 @@ git submodule update --init --recursive
 Create directories to store real world data
 
 ```bash
-mkdir real_world_test_set && cd real_world_test_set
-mkdir collected_configs collected_pcds collected_trajs evals
+mkdir real_world_test_set && cd real_world_test_set  &&\
+mkdir collected_configs collected_pcds collected_trajs evals && cd ..
 ```
 
 ### 4. Python Dependencies
 #### 4.1 Set up OMPL
+We provide two ways to install the [OMPL](https://ompl.kavrakilab.org/):
+1. Build from source as appeared on the [official installation guide](https://ompl.kavrakilab.org/installation.html)
 ```bash
 ./install-ompl-ubuntu.sh --python
-echo "<path to neural_mp folder>/neural_mp/ompl-1.5.2/py-bindings" >> ~/miniconda3/envs/neural_mp/lib/python3.8/site-packages/ompl.pth
 ```
-#### 4.2 Install Project Dependencies
+2. However, in case the compilation doesn't go through successfully, we provide a pre-compiled zip file as an alternate approach
+```bash
+unzip containers/ompl-1.5.2.zip
+```
+
+After installation, run
+```
+echo "<path to neuralmotionplanner folder>/neuralmotionplanner/ompl-1.5.2/py-bindings" >> ~/miniconda3/envs/neural_mp/lib/python3.8/site-packages/ompl.pth
+```
+
+#### 4.2 Install PyTorch and PyTorch3D
+```bash
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
+pip install "git+https://github.com/facebookresearch/pytorch3d.git"
+```
+
+#### 4.3 Install Project Dependencies
 ```bash
 pip install -e pybullet-object-models/
 pip install -e robomimic/
@@ -117,24 +134,12 @@ pip install -e ./
 pip install -r requirements.txt
 ```
 
-#### 4.3 Install PyTorch and PyTorch3D
-```bash
-pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu121
-pip install "git+https://github.com/facebookresearch/pytorch3d.git"
-```
-
 #### 4.4 For contributers
 ```bash
 pre-commit install
 ```
 
-### 5. Verify Installation
-Run a test command to verify the installation:
-```bash
-python neural_mp/envs/franka_pybullet_table_simple_env.py +video_name=table_top_simple +num_plans=1 task.mp_kwargs.num_execution_steps_per_waypoint=1
-```
-
-### 6. Real World Dependencies
+### 5. Real World Dependencies
 If you are interested to run Neural MP in the real world, please install [ManiMo](https://github.com/mihdalal/manimo).
 1. Set `MANIMO_PATH` as an environment variable in the `.bashrc` file:
    ```bash
