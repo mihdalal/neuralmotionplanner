@@ -97,7 +97,7 @@ git submodule update --init --recursive
 Create directories to store real world data
 
 ```bash
-mkdir real_world_test_set && cd real_world_test_set  &&\
+mkdir real_world_test_set && cd real_world_test_set  && \
 mkdir collected_configs collected_pcds collected_trajs evals && cd ..
 ```
 
@@ -279,7 +279,7 @@ Please cite [the Neural MP paper](https://mihdalal.github.io/neuralmotionplanner
 @article{dalal2024neuralmp,
     title={Neural MP: A Generalist Neural Motion Planner},
     author={Murtaza Dalal and Jiahui Yang and Russell Mendonca and Youssef Khaky and Ruslan Salakhutdinov and Deepak Pathak},
-    journal = {},
+    journal = {arXiv preprint arXiv:2409.05864},
     year={2024},
 }
 ```
