@@ -17,7 +17,7 @@ If you find this codebase useful in your research, please cite:
 @article{dalal2024neuralmp,
     title={Neural MP: A Generalist Neural Motion Planner},
     author={Murtaza Dalal and Jiahui Yang and Russell Mendonca and Youssef Khaky and Ruslan Salakhutdinov and Deepak Pathak},
-    journal = {},
+    journal = {arXiv preprint arXiv:2409.05864},
     year={2024},
 }
 ```
