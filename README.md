@@ -29,8 +29,7 @@ If you find this codebase useful in your research, please cite:
   - [2. System Dependencies](#2-system-dependencies)
   - [3. Clone Repository](#3-clone-repository)
   - [4. Python Dependencies](#4-python-dependencies)
-  - [5. Verify Installation](#5-verify-installation)
-  - [6. Real World Dependencies](#6-real-world-dependencies)
+  - [5. Real World Dependencies](#5-real-world-dependencies)
 - [Real World Deployment](#real-world-deployment)
   - [Camera Calibration](#camera-calibration)
   - [Franka Basic Control Center](#franka-basic-control-center)
@@ -133,6 +132,8 @@ pip install -e robofin/
 pip install -e ./
 pip install -r requirements.txt
 ```
+
+In practice we found that `pointnet2_ops` extension is not easy to build and often raise import errors. Hence, we offer our pre-compiled [`_ext.cpython-38-x86_64-linux-gnu.so`](https://github.com/mihdalal/pointnet2_ops/blob/v3.2.0/pointnet2_ops/_ext.cpython-38-x86_64-linux-gnu.so) file using python3.8, torch2.1.0 and CUDA12.1, so you can install the package without compiling new extensions. Please note, in order to use the pre-compiled extension, you need to comment out [this part of code](https://github.com/mihdalal/pointnet2_ops/blob/e9acd21c2da3bb803128ff1da1028bd2f377eb0e/setup.py#L23-L34) in setup.py, otherwise it will rebuild and overwrite the file.
 
 #### 4.4 For contributers
 ```bash

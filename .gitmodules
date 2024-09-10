@@ -7,7 +7,7 @@
 	branch = neural_mp_release
 [submodule "pointnet2_ops"]
 	path = pointnet2_ops
-	url = git@github.com:fishbotics/pointnet2_ops.git
+	url = git@github.com:mihdalal/pointnet2_ops.git
 	branch = v3.2.0
 [submodule "robofin"]
 	path = robofin
