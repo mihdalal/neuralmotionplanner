@@ -3,6 +3,7 @@ This repository is the official implementation of Neural MP: A Generalist Neural
 
 Neural MP is a machine learning-based motion planning system for robotic manipulation tasks. It combines neural networks trained on large-scale simulated data with lightweight optimization techniques to generate efficient, collision-free trajectories. Neural MP is designed to generalize across diverse environments and obstacle configurations, making it suitable for both simulated and real-world robotic applications. This repository contains the implementation, data generation tools, and evaluation scripts for Neural MP.
 
+🚀🚀🚀 **News: Check out our follow-up work, [DRP: Deep Reactive Policy](https://deep-reactive-policy.com/)!**
 
 https://github.com/user-attachments/assets/17eeb664-ea4c-4904-b82e-cb5231fc84b9
 
@@ -14,11 +15,20 @@ https://github.com/user-attachments/assets/17eeb664-ea4c-4904-b82e-cb5231fc84b9
 
 If you find this codebase useful in your research, please cite:
 ```bibtex
-@article{dalal2024neuralmp,
-    title={Neural MP: A Generalist Neural Motion Planner},
-    author={Murtaza Dalal and Jiahui Yang and Russell Mendonca and Youssef Khaky and Ruslan Salakhutdinov and Deepak Pathak},
-    journal = {arXiv preprint arXiv:2409.05864},
-    year={2024},
+@inproceedings{dalal2025neural,
+  title={Neural MP: A Neural Motion Planner},
+  author={Dalal, Murtaza and Yang, Jiahui and Mendonca, Russell and Khaky, Youssef and Salakhutdinov, Ruslan and Pathak, Deepak},
+  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={1--8},
+  year={2025},
+  organization={IEEE}
+}
+
+@article{yang2025deep,
+  title={Deep Reactive Policy: Learning Reactive Manipulator Motion Planning for Dynamic Environments},
+  author={Jiahui Yang and Jason Jingzhou Liu and Yulong Li and Youssef Khaky and Deepak Pathak},
+  journal={9th Annual Conference on Robot Learning},
+  year={2025},
 }
 ```
 
@@ -277,10 +287,19 @@ Please stay tuned, we will soon be releasing the full dataset used to train our 
 Please cite [the Neural MP paper](https://mihdalal.github.io/neuralmotionplanner/resources/paper.pdf) if you use this code in your work:
 
 ```bibtex
-@article{dalal2024neuralmp,
-    title={Neural MP: A Generalist Neural Motion Planner},
-    author={Murtaza Dalal and Jiahui Yang and Russell Mendonca and Youssef Khaky and Ruslan Salakhutdinov and Deepak Pathak},
-    journal = {arXiv preprint arXiv:2409.05864},
-    year={2024},
+@inproceedings{dalal2025neural,
+  title={Neural MP: A Neural Motion Planner},
+  author={Dalal, Murtaza and Yang, Jiahui and Mendonca, Russell and Khaky, Youssef and Salakhutdinov, Ruslan and Pathak, Deepak},
+  booktitle={2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  pages={1--8},
+  year={2025},
+  organization={IEEE}
+}
+
+@article{yang2025deep,
+  title={Deep Reactive Policy: Learning Reactive Manipulator Motion Planning for Dynamic Environments},
+  author={Jiahui Yang and Jason Jingzhou Liu and Yulong Li and Youssef Khaky and Deepak Pathak},
+  journal={9th Annual Conference on Robot Learning},
+  year={2025},
 }
 ```
